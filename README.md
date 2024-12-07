@@ -19,6 +19,8 @@ Rocket Explorer is a JavaScript-based rocket game featuring multiple levels, var
    ```bash
    git clone https://github.com/your-username/rocket-game.git
 
+## Link to play it on Web
+https://joycemalik.github.io/SimpleRocketGame/
 
 Usage
 Controls:
