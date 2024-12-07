@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- User Interface -->
+    <div id="ui">
+        <div id="score">Score: 0</div>
+        <div id="high-score">High Score: 0</div>
+        <button id="pause-button">
+            <img src="assets/images/icons/pause-button.png" alt="Pause">
+        </button>
+        <button id="settings-button">
+            <img src="assets/images/icons/settings-icon.png" alt="Settings">
+        </button>
+    </div>
+
+    <!-- Settings Menu -->
+    <div id="settings-menu" style="display: none;">
+        <h2>Settings</h2>
+        <label>
+            Background Music:
+            <input type="checkbox" id="bg-music-toggle" checked>
+        </label>
+        <label>
+            Thrust Sound:
+            <input type="checkbox" id="thrust-sound-toggle" checked>
+        </label>
+        <button id="close-settings">Close</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over" style="display: none;">
+        <h1>GAME OVER</h1>
+        <p id="final-score">Your Score: 0</p>
+        <button id="restart-button">Restart</button>
+    </div>
+
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>Rocket Explorer</h1>
+        <button id="start-button">Start Game</button>
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Audio Elements -->
+    <audio id="thrustSound" src="assets/sounds/thrust.mp3" loop></audio>
+    <audio id="collisionSound" src="assets/sounds/collision.mp3"></audio>
+    <audio id="powerupSound" src="assets/sounds/powerup.mp3"></audio>
+    <audio id="backgroundMusic" src="assets/sounds/background-music.mp3" loop></audio>
+    <audio id="explosionSound" src="assets/sounds/explosion.mp3"></audio>
+    <audio id="levelUpSound" src="assets/sounds/level-up.mp3"></audio>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
